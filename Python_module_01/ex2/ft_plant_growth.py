@@ -33,35 +33,11 @@ if __name__ == "__main__":
     rose_start_height = rose.height
     sunflower_start_height = sunflower.height
 
-    rose.grow()
-    rose.age_one_day()
-    sunflower.grow()
-    sunflower.age_one_day()
-
-    rose.grow()
-    rose.age_one_day()
-    sunflower.grow()
-    sunflower.age_one_day()
-
-    rose.grow()
-    rose.age_one_day()
-    sunflower.grow()
-    sunflower.age_one_day()
-
-    rose.grow()
-    rose.age_one_day()
-    sunflower.grow()
-    sunflower.age_one_day()
-
-    rose.grow()
-    rose.age_one_day()
-    sunflower.grow()
-    sunflower.age_one_day()
-
-    rose.grow()
-    rose.age_one_day()
-    sunflower.grow()
-    sunflower.age_one_day()
+    for i in range(0, 6):
+        rose.grow()
+        rose.age_one_day()
+        sunflower.grow()
+        sunflower.age_one_day()
 
     print("=== Day 7 ===")
     print(rose.get_info())
