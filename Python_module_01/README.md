@@ -1,6 +1,6 @@
 # 🌻 Python OOP: The Garden Project
 
-Welcome to the documentation for the Garden Project. This project uses the concept of building and managing a digital garden to explain **Object-Oriented Programming (OOP)** in Python.
+This project uses the concept of building and managing a digital garden to explain **Object-Oriented Programming (OOP)** in Python.
 
 Instead of talking about "data structures" and "algorithms," we talk about **Plants**, **Flowers**, and **Gardeners**. This guide explains every concept used in the code files.
 
