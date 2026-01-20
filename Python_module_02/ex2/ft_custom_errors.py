@@ -17,16 +17,25 @@ class WaterError(GardenError):
 
 
 def check_plant_health(is_wilting: bool) -> None:
+    """
+    Checks if the plant is wilting. Raises PlantError if true.
+    """
     if is_wilting:
         raise PlantError("The tomato plant is wilting!")
 
 
 def check_water_level(tank_liters: int) -> None:
+    """
+    Checks if the tank is empty. Raises WaterError if true.
+    """
     if tank_liters <= 0:
         raise WaterError("Not enough water in the tank!")
 
 
 def test_custom_errors() -> None:
+    """
+    Tests catching specific errors (Plant/Water) and general GardenError.
+    """
     print("=== Custom Garden Errors Demo ===")
 
     print("Testing PlantError...")

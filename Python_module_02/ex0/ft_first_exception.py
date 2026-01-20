@@ -5,6 +5,9 @@ and safely catching errors when invalid data is provided.
 
 
 def check_temperature(temp_str):
+    """
+    Checks temperature. Catches errors if input is not a number.
+    """
     try:
         temp = int(temp_str)
 
@@ -20,6 +23,9 @@ def check_temperature(temp_str):
 
 
 def test_temperature_input():
+    """
+    Tests temperature checker with numbers and text to ensure no crashes.
+    """
     print("=== Garden Temperature Checker ===")
 
     tests = ["25", "abc", "100", "-50"]

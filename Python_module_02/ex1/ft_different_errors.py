@@ -5,6 +5,9 @@ like ValueError, ZeroDivisionError, FileNotFoundError, and KeyError.
 
 
 def garden_operations(error_type: str) -> None:
+    """
+    Intentionally breaks code (div by zero, missing file) based on input.
+    """
     if error_type == "value":
         int("abc")
 
@@ -15,11 +18,14 @@ def garden_operations(error_type: str) -> None:
         open("does_not_exist.txt", "r")
 
     elif error_type == "key":
-        plants: dict[str, str] = {"rose": "red"}
+        plants = {"rose": "red"}
         plants["missing_plant"]
 
 
 def test_error_types() -> None:
+    """
+    Runs broken operations and catches specific error types separately.
+    """
     print("=== Garden Error Types Demo ===")
 
     print("Testing ValueError...")

@@ -18,15 +18,24 @@ class WaterError(GardenError):
 
 class GardenManager:
     def __init__(self) -> None:
+        """
+        Starts the garden manager with an empty list to hold plant names.
+        """
         self.plants = []
 
     def add_plant(self, plant_name: str) -> None:
+        """
+        Adds a new plant name. Raises error if name is empty.
+        """
         if not plant_name:
             raise PlantError("Plant name cannot be empty!")
         self.plants.append(plant_name)
         print(f"Added {plant_name} successfully")
 
     def water_plants(self) -> None:
+        """
+        Waters plants. Always runs cleanup code (finally) even if errors occur.
+        """
         print("Opening watering system")
         try:
             for plant in self.plants:
@@ -40,6 +49,9 @@ class GardenManager:
         water_level: int,
         sun_level: int
     ) -> None:
+        """
+        Checks plant health. Complains if water is too high or sun too low.
+        """
         if water_level > 10:
             raise PlantError(
                 f"Water level {water_level} is too high (max 10)"
@@ -53,11 +65,17 @@ class GardenManager:
         )
 
     def verify_tank_status(self, liters: int) -> None:
+        """
+        Checks the water tank. Complains if the tank is empty.
+        """
         if liters <= 0:
             raise WaterError("Not enough water in tank")
 
 
 def main():
+    """
+    Runs the garden system to test adding, watering, and error handling.
+    """
     manager = GardenManager()
     print("=== Garden Management System ===")
     print("Adding plants to garden...")

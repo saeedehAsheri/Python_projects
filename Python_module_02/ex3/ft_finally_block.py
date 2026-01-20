@@ -5,6 +5,9 @@ like closing a system, runs even if an error occurs.
 
 
 def water_plants(plant_list: list) -> None:
+    """
+    Waters plants. Uses 'finally' to ensure cleanup happens after errors.
+    """
     try:
         print("Opening watering system")
         for plant in plant_list:
@@ -20,6 +23,9 @@ def water_plants(plant_list: list) -> None:
 
 
 def test_watering_system() -> None:
+    """
+    Tests that cleanup runs even when the list contains invalid data.
+    """
     print("=== Garden Watering System ===")
 
     print("Testing normal watering...")
