@@ -1,15 +1,15 @@
+"""
+Data Stream Processor.
+
+This script demonstrates 'Generators'. Instead of creating a massive list of
+data that eats up all memory, we create a stream that produces data one
+piece at a time, exactly when we need it.
+"""
+
+
 def game_event_generator(total_events):
     """
-    Generate a stream of game events using a pattern.
-
-    This function simulates game data without using random libraries.
-    It yields data one by one to save memory.
-
-    Args:
-        total_events (int): The total number of events to generate.
-
-    Yields:
-        tuple: A tuple containing (player_name, level, action_type).
+    Produce game events one by one to save memory.
     """
     names = ["alice", "bob", "charlie", "dave", "eve"]
     actions = ["killed monster", "found treasure", "leveled up", "died"]
@@ -19,20 +19,14 @@ def game_event_generator(total_events):
 
     for i in range(total_events):
         name = names[i % n_names]
-
         level = (i % 20) + 1
-
         action = actions[i % n_actions]
-
         yield (name, level, action)
 
 
 def fibonacci_generator():
     """
-    Generate an infinite sequence of Fibonacci numbers.
-
-    Yields:
-        int: The next number in the Fibonacci sequence.
+    Produce the next Fibonacci number in the infinite sequence.
     """
     a, b = 0, 1
     while True:
@@ -42,13 +36,7 @@ def fibonacci_generator():
 
 def prime_generator():
     """
-    Generate an infinite sequence of Prime numbers.
-
-    This function checks for primality using a loop and yields
-    the number if it is prime.
-
-    Yields:
-        int: The next prime number.
+    Produce the next Prime number in the infinite sequence.
     """
     num = 2
     while True:

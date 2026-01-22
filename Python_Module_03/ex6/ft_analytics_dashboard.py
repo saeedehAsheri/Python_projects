@@ -1,13 +1,18 @@
 """
 Game Analytics Dashboard.
 
-This script demonstrates how to use Python comprehensions (List, Dict, Set)
-to analyze game data. It filters players, calculates scores, and finds
-unique achievements.
+This script demonstrates the use of Python comprehensions (List, Dict, Set)
+to efficiently filter, transform, and analyze game data structures.
 """
 
 
 def main():
+    """
+    Execute the analytics dashboard.
+
+    Processes a hardcoded dataset of player information to demonstrate
+    various comprehension techniques and print statistical insights.
+    """
     game_data = [
         {
             "player": "alice",

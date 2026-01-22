@@ -1,17 +1,12 @@
-# Exercise 4: Inventory Master
+# Understanding Python Dictionaries
 
-## 📝 Overview
-This project simulates a video game inventory system. It uses **Dictionaries** to store items (like swords and potions) and their quantities. The program analyzes this data to calculate totals, percentages, and statistics, and organizes items into categories.
+This exercise demonstrates how to build a simple database system using Python's **Dictionary** data structure. Unlike lists, which use numbers (indexes) to find data, dictionaries use "Keys" (like names) to retrieve "Values".
 
-## 🧠 Concepts Learned
+## 1. The Power of Key-Value Pairs
+Think of a dictionary like a real backpack in a game.
+* **List approach:** You have a bag of items. To find your potion, you have to dump the whole bag out and check every item one by one.
+* **Dictionary approach:** You have a magical label. You say "Potion", and the bag instantly tells you "5".
 
-### 1. Dictionaries (`dict`)
-A dictionary is a storage container that uses **Key-Value pairs**.
-- **Key:** The unique name of the item (e.g., "sword").
-- **Value:** The data associated with that name (e.g., `1` unit).
-- **Why use it?** Unlike a list, a dictionary lets you find data instantly by its name. You don't have to search through the whole pile; you just ask for "sword".
-
+In the code, we use `dict_args` to store this:
 ```python
-# Example
-inventory = {"potion": 5, "sword": 1}
-print(inventory["potion"]) # Output: 5
+{'sword': 1, 'potion': 5, 'shield': 2}
