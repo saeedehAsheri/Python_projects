@@ -1,6 +1,6 @@
-# 🏭 Code Nexus: Enterprise Data Pipeline
+# Code Nexus: Enterprise Data Pipeline
 
-## 📖 The Story: The "Nexus Kitchen"
+## The Story: The "Nexus Kitchen"
 Welcome to the final challenge! In this project, we are not just building simple machines anymore. We are building a massive **Factory** (or a Restaurant Kitchen) that handles different types of orders (Data).
 
 To understand this code, imagine you are the **Manager** of a restaurant that serves:
@@ -12,7 +12,7 @@ This system uses advanced architecture to prepare all these different dishes usi
 
 ---
 
-## 🧠 Key Concepts (Explained Simply)
+## Key Concepts (Explained Simply)
 
 ### 1. The "Job Description" (Protocol / Duck Typing)
 In our factory, we don't care about a worker's family name or degree. We only care about one thing: **Can you do the job?**
@@ -48,7 +48,7 @@ Someone needs to take the orders and yell "Start Line 1!".
 
 ---
 
-## 🛠️ Architecture Diagram
+## Architecture Diagram
 
 ```mermaid
 graph TD
