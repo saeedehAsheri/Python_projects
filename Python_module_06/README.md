@@ -1,6 +1,6 @@
-# 🧪 The Alchemist’s Codex: Mastering Python Imports
+# The Alchemist’s Codex
 
-Welcome to the **Alchemical Laboratory**. This project is a hands-on journey through the hidden mechanics of Python's import system. Instead of just writing code, we explored how to organize logic, control access, and break "curses" (circular dependencies) using professional Python standards.
+This project is a hands-on journey through the hidden mechanics of Python's import system. Instead of just writing code, we explored how to organize logic, control access, and break "curses" (circular dependencies) using professional Python standards.
 
 ---
 
