@@ -41,18 +41,10 @@ We use the `python-dotenv` module to bridge the gap between our `.env` file and 
 
 The goal is to build `oracle.py`, a secure configuration system that reads from the mainframe.
 ## Usage
-1. Setup the Template:
 
-```Bash
-    cp .env.example .env
+To run the Oracle system, follow these steps to ensure your environment is correctly configured:
 
-# Edit .env and add your Matrix credentials
-2. Run the Oracle:
-
-```Bash
-    python3 oracle.py
-
-3. Environment Override (Advanced): You can override the .env file directly from the terminal. This is a powerful feature for automated systems:
-
-```Bash
-    MATRIX_MODE=production API_KEY=ZionSecure123 python3 oracle.py
+### 1. Setup the Configuration Template
+Copy the example environment file to create your active `.env` file. This prevents your actual secrets from being tracked by Git.
+```bash
+cp .env.example .env
