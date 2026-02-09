@@ -1,6 +1,6 @@
 # Matrix Data Engineering: The Core Fundamentals
 
-"Welcome to the real world." This repository contains a series of exercises designed to master the infrastructure of professional Data Engineering: Environment Isolation, Dependency Management, and Secure Configuration.
+This repository contains a series of exercises designed to master the infrastructure of professional Data Engineering: Environment Isolation, Dependency Management, and Secure Configuration.
 
 ---
 
