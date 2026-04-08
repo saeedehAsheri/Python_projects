@@ -1,0 +1,11 @@
+# Secrets
+.env
+
+# Environments
+matrix_env/
+.venv/
+node_modules/
+
+# Python cache
+__pycache__/
+*.pyc
