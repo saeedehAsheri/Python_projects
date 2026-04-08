@@ -26,6 +26,11 @@ https://docs.pydantic.dev/latest/examples/files/
 
 https://www.couchbase.com/blog/validate-json-documents-in-python-using-pydantic/
 
+https://www.soumendrak.com/blog/how-to-validate-a-json-in-python/
+
+https://www.youtube.com/watch?v=4rFVLMBwjGY
+
+
 
 
 

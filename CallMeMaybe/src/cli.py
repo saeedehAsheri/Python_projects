@@ -1,7 +1,7 @@
 import argparse
 from pathlib import Path
 
-def pars_args()-> argparse.Namespace:
+def parse_args()-> argparse.Namespace:
     """
     A function for read and pars argument from the command line.
     """

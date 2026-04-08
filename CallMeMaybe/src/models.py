@@ -5,23 +5,25 @@ JsonScalarType = Literal["string", "number", "boolean"]
 
 class Params(BaseModel):
     """Description of the function parameters"""
-    model_config = ConfigDict()
+    model_config = ConfigDict(extra='forbid')
+    #extra determines how to handle extra 
+    # attributes not defined in the model
     type: JsonScalarType
 
 class ReturnsJson(BaseModel):
     """
     Description of the function returns
     """
-    model_config = ConfigDict()
+    model_config = ConfigDict(extra='forbid')
     type: JsonScalarType
 
 class FunctionDefinition(BaseModel):
     """Function Definition loaded from JSON file"""
-    model_config = ConfigDict()
+    model_config = ConfigDict(extra='forbid')
     name: str
     description: str
     parameters: dict[str, Params]
-    returns: Returns_json
+    returns: ReturnsJson
     
     @field_validator("name")
     @classmethod
@@ -41,7 +43,7 @@ class FunctionDefinition(BaseModel):
 
 class FunctionCall(BaseModel):
     """Function call prompts loaded from JSON file"""
-    model_config = ConfigDict()
+    model_config = ConfigDict(extra='forbid')
     prompt: str
 
     @field_validator("prompt")
@@ -54,7 +56,7 @@ class FunctionCall(BaseModel):
 
 class FunctionCallResult(BaseModel):
     """Structured output for the result"""
-    model_config = ConfigDict()
+    model_config = ConfigDict(extra='forbid')
     prompt: str
     name: str
     parameters: dict[str, Any]

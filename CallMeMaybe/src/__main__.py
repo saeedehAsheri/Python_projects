@@ -1,6 +1,6 @@
 from pathlib import Path
-from cli import pars_args
-from io_utils import load_json_file
+from src.cli import parse_args
+from src.io_utils import load_json_file
 
 def main():
     """
@@ -11,7 +11,7 @@ def main():
     parser.add_argument(action= "-o")
     parser.parse_args()
     """
-    parser = pars_args()
+    parser = parse_args()
     func_def = load_json_file(parser.functions_definition)
     #print(func_def)
 
