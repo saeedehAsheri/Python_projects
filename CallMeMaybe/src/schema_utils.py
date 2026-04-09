@@ -56,3 +56,8 @@ def validate_params_against_schema(
                 f"Missing required parameter '{param_name}' for function"
                 f"'{FunctionDefinition.name}'"
             )
+        normalize[param_name] = normalize_param_value(
+            param_spec.type,
+            parameters[param_name]
+        )
+        
