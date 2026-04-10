@@ -50,9 +50,18 @@ def validate_params_against_schema(
     """Validate and normalize parameters according to the function schema"""
     normalize: dict[str, Any]= {}
 
-    for param_name, param_spec in FunctionDefinition.parameters.items():
+    for param_name, param_spec in func_defs.parameters.items():
         if param_name not in parameters:
             raise ValueError(
                 f"Missing required parameter '{param_name}' for function"
-                f"'{FunctionDefinition.name}'"
+                f"'{func_defs.name}'"
             )
+        normalize[param_name] = normalize_param_value(
+            param_spec.type,
+            parameters[param_name],
+        )
+    if set(parameters.keys()) != set(func_defs.parameters.keys()):
+        raise ValueError(
+            f"Unexpected parameters for function '{func_defs.name}'"
+        )
+    return normalize
