@@ -65,3 +65,4 @@ def validate_params_against_schema(
             f"Unexpected parameters for function '{func_defs.name}'"
         )
     return normalize
+
