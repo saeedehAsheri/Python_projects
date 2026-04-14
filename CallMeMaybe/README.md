@@ -30,6 +30,8 @@ https://www.soumendrak.com/blog/how-to-validate-a-json-in-python/
 
 https://www.youtube.com/watch?v=4rFVLMBwjGY
 
+https://www.datacamp.com/cheat-sheet/regular-expresso?utm_cid=19589720821&utm_aid=152984012374&utm_campaign=230119_1-ps-other~dsa-tofu~all_2-b2c_3-emea_4-prc_5-na_6-na_7-le_8-pdsh-go_9-nb-e_10-na_11-na&utm_loc=9195655-&utm_mtd=-c&utm_kw=&utm_source=google&utm_medium=paid_search&utm_content=ps-other~emea-en~dsa~tofu~cheat-sheet~data-science&gad_source=1&gad_campaignid=19589720821&gclid=Cj0KCQjwy_fOBhC6ARIsAHKFB7-JGnyZaHfOE0ncwMv2b9LsuJAWwo9oeXATLW3nX9YHwR8uSyRiDhsaAllfEALw_wcB
+
 
 
 

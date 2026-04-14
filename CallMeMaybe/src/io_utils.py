@@ -26,7 +26,7 @@ def write_json_file(path: Path, results: list[FunctionCallResult])-> None:
 
     data = [res.model_dump() for res in results]
     try:
-        with open(Path, "w", encoding="utf-8") as file:
+        with open(path, "w", encoding="utf-8") as file:
             json.dump(data, file, indent= 2, ensure_ascii= False)
     except OSError:
         print(f"Couldn't write output file to '{path}'")
